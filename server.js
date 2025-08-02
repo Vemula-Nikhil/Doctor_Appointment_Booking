@@ -3,10 +3,12 @@ const path = require('path');
 const {open} = require('sqlite')
 const sqlite3 = require('sqlite3')
 const dbpath = path.join(__dirname, 'doctors.db');
+const cors = require('cors');
+
 const app = express();
 
 app.use(express.json())
-
+app.use(cors());
 let db;
 
 const initialiseDbAndServer = async () => {
