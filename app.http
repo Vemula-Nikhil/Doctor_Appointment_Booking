@@ -1,0 +1,12 @@
+GET http://localhost:4000/doctors/3
+
+### 
+POST http://localhost:4000/doctors/booking/form/
+Content-Type: application/json
+
+{
+    "doctorId": 2,
+    "patientName": "Nikhil Kumar",
+    "email": "nikhil@example.com",
+    "dateTime": "2025-08-03 11:00"
+}
